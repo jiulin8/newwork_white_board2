@@ -7,7 +7,10 @@ class UserDialog:
     @classmethod
     def getUserInputIp(cls):
         def getUserIpAndPort():
-            cls._Ip = e1
+            cls._Ip = e1.get()
+            cls._port = int(e2.get())
+
+            ClientWindow.destroy()
 
         ClientWindow = Tk()
         Label(ClientWindow,text='请输入IP').grid(row=0)
