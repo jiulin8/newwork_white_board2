@@ -21,7 +21,7 @@ class UserDialog:
         e2 = Entry(ClientWindow)
 
         e1.grid(row=1,column=1)
-        e1.grid(row=2, column=1)
+        e2.grid(row=2, column=1)
 
         button = Button(ClientWindow)
         button.config(text='ok',command = getUserIpAndPort)
